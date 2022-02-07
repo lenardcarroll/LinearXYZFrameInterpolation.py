@@ -8,6 +8,6 @@ python -i LinearXYZFrameInterpolation.py -in <INPUT_STRUCTURE_FILE_NAME> -out <O
 
 The script works by reading in the .xyz file as a dataframe, removing the headers from each frame and then splitting dataframe up into smaller dataframes, these being the frames from the .xyz file. Next, the distance between the atoms from frame n to frame n+1 is calculated, then deivided by the number of frames you want to interpolate minus one, that is:
 
-(r<sub>(n+1)-r<sub>n)/(#InterpolatedFrames - 1)
+(r<sub>(n+1) - r<sub>n)/(#InterpolatedFrames - 1)
   
 The above value is then multiplied with i in range(1,terpolatedFrames) after which it is added to frame n. 
