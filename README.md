@@ -10,4 +10,6 @@ The script works by reading in the .xyz file as a dataframe, removing the header
 
 ( r<sub>(n+1)</sub> - r<sub>n</sub>)/(#InterpolatedFrames - 1)
   
-The above value is then multiplied with i in range(1,terpolatedFrames) after which it is added to frame n. 
+The above value is then multiplied with i in range(1,terpolatedFrames) after which it is added to frame n.
+
+An example video to show the interpolation will follow at a later stage.
